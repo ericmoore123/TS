@@ -1,7 +1,12 @@
 # TS
 TypeScript Reference - Learning TS
 
-### What is TypeScript?
+<div align="center"> 
+  
+  ![typescriptData](https://user-images.githubusercontent.com/51104403/121085767-46260380-c7b0-11eb-9069-4ef4b9307799.PNG)
+  
+</div>
+  
 -  TypeScript is a programming language built and maintained by Microsoft. It is a superset of JavaScript that adds strong type checking and is compiled into plain JavaScript code. (means that TypeScript has all the features of JavaScript as well as some additional features)
 -  Comes with features such as better development-time tooling, static code analysis, compile-time type checking, and code-level documentation.
 -  The features that come with TypeScript make it the perfect programming language for building large-scale JavaScript applications.
