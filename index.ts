@@ -1,7 +1,7 @@
 // TypeScript stands in an unusual relationship to JavaScript. TypeScript offers all of JavaScript’s features, and an additional layer on top of these: 
 // TypeScript’s type system.
 
-
+// DEFINING TYPES
 let firstType = "John Doe"; // On hover type: string
 
 // Inferring Object parameter Type
