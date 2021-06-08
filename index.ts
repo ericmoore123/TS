@@ -1,7 +1,7 @@
 // TypeScript stands in an unusual relationship to JavaScript. TypeScript offers all of JavaScript’s features, and an additional layer on top of these: 
 // TypeScript’s type system.
 
-// DEFINING TYPES
+// DEFINING TYPES ===========================================================================================================
 let firstType = "John Doe"; // On hover type: string
 
 // Inferring Object parameter Type
@@ -37,8 +37,7 @@ class createUser{
 };
 const newUser: User = new createUser('Charles', 35, 1);
 
-// CUSTOM TYPES (Unions or Generics)
-// UNIONS
+//CUSTOM TYPES (Unions or Generics) UNIONS ====================================================================================
 type MyBool = true | false;
 
 // A popular use-case for union types is to describe the set of string or number literals that a value is allowed to be:
@@ -59,7 +58,7 @@ function wrapInArray(param: string | string[]) {
     };
 };
 
-// GENERICS
+// GENERICS ===================================================================================================================
 // Generics provide variables to types. A common example is an array. An array without generics could contain anything. 
 // An array with generics can describe the values that the array contains.
 
@@ -76,3 +75,25 @@ declare const backpack: Backpack<number>; //declare "backpack" to use "interface
 
 const object = backpack.get(); // will return type of "number"
 // backpack.add("apples");  === THROWS TYPE ERROR ===
+
+// Structural Type System ======================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
