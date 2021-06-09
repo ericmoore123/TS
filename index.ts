@@ -103,8 +103,20 @@ logPoint(rect); // Output = "33, 3"
 const color = { hex: "#187ABF" }; // "hex" would need to be added as a parameter to Point interface 
 // logPoint(color); // Output = ERROR
 
+// THERE IS NO DIFFERENCE BETWEEN HOW CLASSES AND OBJECTS CONFORM TO SHAPES (see below example):
 
-
+class VirtualPoint {
+    x: number;
+    y: number;
+  
+    constructor(x: number, y: number) {
+      this.x = x;
+      this.y = y;
+    }
+  }
+  
+  const newVPoint = new VirtualPoint(13, 56);
+  logPoint(newVPoint); // logs "13, 56"
 
 
 
