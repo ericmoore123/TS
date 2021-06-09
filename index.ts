@@ -78,13 +78,30 @@ const object = backpack.get(); // will return type of "number"
 
 // Structural Type System ======================================================================================================
 
+// One of TypeScript’s core principles is that type checking focuses on the shape that values have. 
+// This is sometimes called “duck typing” or “structural typing”. In a structural type system, if two objects have the same shape, 
+// they are considered to be of the same type.
 
+interface Point{
+    x: number;
+    y: number;
+};
 
+const logPoint = (p: Point) => {
+    console.log(`${p.x}, ${p.y}`);
+};
 
+const point = { x: 12, y: 20}; // this point variable is the same "shape" as the Point interface 
+logPoint(point); // Output = "12, 30"
 
+const point2 = { x: 20, y: 35, z: 45};
+logPoint(point2); // Output = "20, 35"
 
+const rect = { x: 33, y: 3, width: 30, height: 80 };
+logPoint(rect); // Output = "33, 3"
 
-
+const color = { hex: "#187ABF" }; // "hex" would need to be added as a parameter to Point interface 
+// logPoint(color); // Output = ERROR
 
 
 
