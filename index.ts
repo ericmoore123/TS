@@ -92,15 +92,16 @@ const logPoint = (p: Point) => {
 };
 
 const point = { x: 12, y: 20}; // this point variable is the same "shape" as the Point interface 
-// Output = "12, 30"
+logPoint(point); // Output = "12, 30"
 
 const point2 = { x: 20, y: 35, z: 45};
-// Output = "20, 35"
+logPoint(point2); // Output = "20, 35"
 
 const rect = { x: 33, y: 3, width: 30, height: 80 };
-// Output = "33, 3"
+logPoint(rect); // Output = "33, 3"
 
-
+const color = { hex: "#187ABF" }; // "hex" would need to be added as a parameter to Point interface 
+// logPoint(color); // Output = ERROR
 
 
 
