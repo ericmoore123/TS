@@ -104,7 +104,6 @@ const color = { hex: "#187ABF" }; // "hex" would need to be added as a parameter
 // logPoint(color); // Output = ERROR
 
 // THERE IS NO DIFFERENCE BETWEEN HOW CLASSES AND OBJECTS CONFORM TO SHAPES (see below example):
-
 class VirtualPoint {
     x: number;
     y: number;
